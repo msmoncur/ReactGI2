@@ -33,7 +33,7 @@ const SearchMovies = () => {
         <form onSubmit={handleSearch}>
           <input
             type="text"
-            placeholder="Search for a movie..."
+            placeholder="Search for a movie"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="search-input"
@@ -80,7 +80,7 @@ const MovieDetails = () => {
     fetchMovieDetails();
   }, [id]);
 
-  if (!movie) return <p>Loading...</p>;
+  if (!movie) return <p>Loading Movies</p>;
 
   return (
     <div className="movie-details">
